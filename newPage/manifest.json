@@ -1,0 +1,30 @@
+{
+    "auther": "Vino",
+    "name": "Chrome New Page",
+    "version": "1.0.0",
+    "description": "Chrome浏览器搜索打开新窗口。",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Chrome New Page"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.google.com/search*"
+            ],
+            "js": [
+                "js/jquery-2.2.4.min.js",
+                "js/content_script.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "http://*/",
+        "http://*/*",
+        "https://*/",
+        "https://*/*"
+    ],
+    "homepage_url": "http://blog.augustvino.cn"
+}
