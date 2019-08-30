@@ -1,7 +1,7 @@
 {
     "auther": "Vino",
     "name": "Chrome New Page",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Chrome浏览器搜索打开新窗口。",
     "manifest_version": 2,
     "browser_action": {

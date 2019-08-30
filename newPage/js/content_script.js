@@ -1,5 +1,7 @@
 //注入页面的脚本文件
 (function () {
+
+
     $(function () {
         const $searchContent = $("h3");
         const $len = $searchContent.length;
